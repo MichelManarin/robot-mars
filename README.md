@@ -1,6 +1,7 @@
 # robot-marss
 
-O Problema:
+# Problema:
+
 Um time de robôs devem ser colocados pela NASA para explorar um terreno em Marte.
 Esse terreno, que é retangular, precisa ser navegado pelos robôs de tal forma que suas
 câmeras acopladas possam obter uma visão completa da região, enviando essas imagens
@@ -19,15 +20,20 @@ Assuma que um robô se movimenta para o NORTE em relação ao eixo y. Ou seja, u
 passo para o NORTE da posição (x,y), é a posição (x, y+1)
 Exemplo: Se o robô está na posição (0,0,N), o comando "MML" fará ele chegar na posição
 (0,2,W)
+
+
 Escreva um programa que permita aos engenheiros da NASA enviar comandos para o
 Robô e saber onde ele se encontra. Os engenheiros irão rodar testes no seu software para
 garantir que ele se comporta da forma esperada, antes de enviar o Robô para marte.
+
 Requisitos do desafio:
 O terreno deverá ser iniciado com 5x5 posições;
 O robô inicia na coordenada (0,0,N);
 Deverá ser possível enviar um comando para o Robô que me retorne a posição final dele;
 O Robô não pode se movimentar para fora da área especificada;
 Não deve guardar estado do robô para consulta posterior;
+
+
 Alguns cenários de teste:
 Movimento com rotações para direita:
 curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM
@@ -45,7 +51,3 @@ Posição inválida:
 curl -s --request POST
 http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM
 Saída esperada: 400 Bad Request
-Requisitos técnicos:
-Deve ter teste unitários
-O desafio deve ser entregue escrito utilizando Java, .NET, Node.js ou Php;
-A interface de comunicação com o robô é REST;
