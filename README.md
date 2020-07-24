@@ -18,6 +18,7 @@ esquerda ou para direita, respectivamente, sem se mover da sua posição atual. 
 faz o robô deslocar-se uma posição para frente.
 Assuma que um robô se movimenta para o NORTE em relação ao eixo y. Ou seja, um
 passo para o NORTE da posição (x,y), é a posição (x, y+1)
+
 Exemplo: Se o robô está na posição (0,0,N), o comando "MML" fará ele chegar na posição
 (0,2,W)
 
